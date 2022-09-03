@@ -1,4 +1,5 @@
-﻿public class JewelCollector {
+﻿using Namespaces;
+public class JewelCollector {
 
     public static void Main() {
 
