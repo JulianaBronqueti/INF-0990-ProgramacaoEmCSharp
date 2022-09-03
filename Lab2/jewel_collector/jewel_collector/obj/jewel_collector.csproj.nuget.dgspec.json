@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\msft39\\Desktop\\INF-0990-ProgramacaoEmCSharp\\Lab2\\teste1\\teste1.csproj": {}
+    "C:\\Users\\msft39\\Desktop\\INF-0990-ProgramacaoEmCSharp\\Lab2\\jewel_collector\\jewel_collector\\jewel_collector.csproj": {}
   },
   "projects": {
-    "c:\\Users\\msft39\\Desktop\\INF-0990-ProgramacaoEmCSharp\\Lab2\\teste1\\teste1.csproj": {
+    "C:\\Users\\msft39\\Desktop\\INF-0990-ProgramacaoEmCSharp\\Lab2\\jewel_collector\\jewel_collector\\jewel_collector.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\msft39\\Desktop\\INF-0990-ProgramacaoEmCSharp\\Lab2\\teste1\\teste1.csproj",
-        "projectName": "teste1",
-        "projectPath": "c:\\Users\\msft39\\Desktop\\INF-0990-ProgramacaoEmCSharp\\Lab2\\teste1\\teste1.csproj",
+        "projectUniqueName": "C:\\Users\\msft39\\Desktop\\INF-0990-ProgramacaoEmCSharp\\Lab2\\jewel_collector\\jewel_collector\\jewel_collector.csproj",
+        "projectName": "jewel_collector",
+        "projectPath": "C:\\Users\\msft39\\Desktop\\INF-0990-ProgramacaoEmCSharp\\Lab2\\jewel_collector\\jewel_collector\\jewel_collector.csproj",
         "packagesPath": "C:\\Users\\msft39\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\msft39\\Desktop\\INF-0990-ProgramacaoEmCSharp\\Lab2\\teste1\\obj\\",
+        "outputPath": "C:\\Users\\msft39\\Desktop\\INF-0990-ProgramacaoEmCSharp\\Lab2\\jewel_collector\\jewel_collector\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\msft39\\AppData\\Roaming\\NuGet\\NuGet.Config"

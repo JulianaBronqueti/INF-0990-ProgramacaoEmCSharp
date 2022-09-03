@@ -1,0 +1,15 @@
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\bin\Debug\net6.0\jewel_collector.exe
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\bin\Debug\net6.0\jewel_collector.deps.json
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\bin\Debug\net6.0\jewel_collector.runtimeconfig.json
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\bin\Debug\net6.0\jewel_collector.dll
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\bin\Debug\net6.0\jewel_collector.pdb
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.csproj.AssemblyReference.cache
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.AssemblyInfoInputs.cache
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.AssemblyInfo.cs
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.csproj.CoreCompileInputs.cache
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.dll
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\obj\Debug\net6.0\refint\jewel_collector.dll
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.pdb
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.genruntimeconfig.cache
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\obj\Debug\net6.0\ref\jewel_collector.dll
