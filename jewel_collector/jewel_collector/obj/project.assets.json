@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\msft39\\Desktop\\INF-0990-ProgramacaoEmCSharp\\Lab2\\jewel_collector\\jewel_collector\\jewel_collector.csproj",
+      "projectUniqueName": "c:\\Users\\msft39\\Desktop\\INF-0990-ProgramacaoEmCSharp\\jewel_collector\\jewel_collector\\jewel_collector.csproj",
       "projectName": "jewel_collector",
-      "projectPath": "C:\\Users\\msft39\\Desktop\\INF-0990-ProgramacaoEmCSharp\\Lab2\\jewel_collector\\jewel_collector\\jewel_collector.csproj",
+      "projectPath": "c:\\Users\\msft39\\Desktop\\INF-0990-ProgramacaoEmCSharp\\jewel_collector\\jewel_collector\\jewel_collector.csproj",
       "packagesPath": "C:\\Users\\msft39\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\msft39\\Desktop\\INF-0990-ProgramacaoEmCSharp\\Lab2\\jewel_collector\\jewel_collector\\obj\\",
+      "outputPath": "c:\\Users\\msft39\\Desktop\\INF-0990-ProgramacaoEmCSharp\\jewel_collector\\jewel_collector\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\msft39\\AppData\\Roaming\\NuGet\\NuGet.Config"

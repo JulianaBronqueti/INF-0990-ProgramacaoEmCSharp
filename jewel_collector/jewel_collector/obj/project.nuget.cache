@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TVNDEocev0yh/LP9cI/4ZutkneZMyD3UowOboP6fXMjoU6TNcxMSry0PawGegYdPLZ47Xi+SuwnL7uud9AHPQA==",
+  "dgSpecHash": "n1RZtjIcW7XeBnMgjSFTerUsJQA4ovInM6B1mutjwSq51Xp4tYTYQWFW2PgV76iPPYBLIe0Aw3c7MbbzkTGFyw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\msft39\\Desktop\\INF-0990-ProgramacaoEmCSharp\\Lab2\\jewel_collector\\jewel_collector\\jewel_collector.csproj",
+  "projectFilePath": "c:\\Users\\msft39\\Desktop\\INF-0990-ProgramacaoEmCSharp\\jewel_collector\\jewel_collector\\jewel_collector.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
