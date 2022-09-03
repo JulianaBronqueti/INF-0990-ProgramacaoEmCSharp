@@ -1,0 +1,15 @@
+C:\Users\msft39\Desktop\INF-0990\Lab2\teste1\bin\Debug\net6.0\teste1.exe
+C:\Users\msft39\Desktop\INF-0990\Lab2\teste1\bin\Debug\net6.0\teste1.deps.json
+C:\Users\msft39\Desktop\INF-0990\Lab2\teste1\bin\Debug\net6.0\teste1.runtimeconfig.json
+C:\Users\msft39\Desktop\INF-0990\Lab2\teste1\bin\Debug\net6.0\teste1.dll
+C:\Users\msft39\Desktop\INF-0990\Lab2\teste1\bin\Debug\net6.0\teste1.pdb
+C:\Users\msft39\Desktop\INF-0990\Lab2\teste1\obj\Debug\net6.0\teste1.csproj.AssemblyReference.cache
+C:\Users\msft39\Desktop\INF-0990\Lab2\teste1\obj\Debug\net6.0\teste1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\msft39\Desktop\INF-0990\Lab2\teste1\obj\Debug\net6.0\teste1.AssemblyInfoInputs.cache
+C:\Users\msft39\Desktop\INF-0990\Lab2\teste1\obj\Debug\net6.0\teste1.AssemblyInfo.cs
+C:\Users\msft39\Desktop\INF-0990\Lab2\teste1\obj\Debug\net6.0\teste1.csproj.CoreCompileInputs.cache
+C:\Users\msft39\Desktop\INF-0990\Lab2\teste1\obj\Debug\net6.0\teste1.dll
+C:\Users\msft39\Desktop\INF-0990\Lab2\teste1\obj\Debug\net6.0\refint\teste1.dll
+C:\Users\msft39\Desktop\INF-0990\Lab2\teste1\obj\Debug\net6.0\teste1.pdb
+C:\Users\msft39\Desktop\INF-0990\Lab2\teste1\obj\Debug\net6.0\teste1.genruntimeconfig.cache
+C:\Users\msft39\Desktop\INF-0990\Lab2\teste1\obj\Debug\net6.0\ref\teste1.dll
