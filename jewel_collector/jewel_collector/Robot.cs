@@ -14,7 +14,11 @@ public class Robot{
 
     }
 
-    public void getJewels(){
-        
+    public int getTotalJewels(){
+        return 0;
+    }
+
+    public int getBagValue(){
+        return 0;
     }
 }
