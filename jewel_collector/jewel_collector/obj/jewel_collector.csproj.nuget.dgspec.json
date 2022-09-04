@@ -1,27 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\msft39\\Desktop\\INF-0990-ProgramacaoEmCSharp\\jewel_collector\\jewel_collector\\jewel_collector.csproj": {}
+    "e:\\Juliana\\Documents\\UNICAMP\\8º Semestre\\Curso Extensão Tecnologias Microsoft\\INF-0990 - Programação em C#\\INF-0990-ProgramacaoEmCSharp\\jewel_collector\\jewel_collector\\jewel_collector.csproj": {}
   },
   "projects": {
-    "c:\\Users\\msft39\\Desktop\\INF-0990-ProgramacaoEmCSharp\\jewel_collector\\jewel_collector\\jewel_collector.csproj": {
+    "e:\\Juliana\\Documents\\UNICAMP\\8º Semestre\\Curso Extensão Tecnologias Microsoft\\INF-0990 - Programação em C#\\INF-0990-ProgramacaoEmCSharp\\jewel_collector\\jewel_collector\\jewel_collector.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\msft39\\Desktop\\INF-0990-ProgramacaoEmCSharp\\jewel_collector\\jewel_collector\\jewel_collector.csproj",
+        "projectUniqueName": "e:\\Juliana\\Documents\\UNICAMP\\8º Semestre\\Curso Extensão Tecnologias Microsoft\\INF-0990 - Programação em C#\\INF-0990-ProgramacaoEmCSharp\\jewel_collector\\jewel_collector\\jewel_collector.csproj",
         "projectName": "jewel_collector",
-        "projectPath": "c:\\Users\\msft39\\Desktop\\INF-0990-ProgramacaoEmCSharp\\jewel_collector\\jewel_collector\\jewel_collector.csproj",
-        "packagesPath": "C:\\Users\\msft39\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\msft39\\Desktop\\INF-0990-ProgramacaoEmCSharp\\jewel_collector\\jewel_collector\\obj\\",
+        "projectPath": "e:\\Juliana\\Documents\\UNICAMP\\8º Semestre\\Curso Extensão Tecnologias Microsoft\\INF-0990 - Programação em C#\\INF-0990-ProgramacaoEmCSharp\\jewel_collector\\jewel_collector\\jewel_collector.csproj",
+        "packagesPath": "C:\\Users\\Juliana\\.nuget\\packages\\",
+        "outputPath": "e:\\Juliana\\Documents\\UNICAMP\\8º Semestre\\Curso Extensão Tecnologias Microsoft\\INF-0990 - Programação em C#\\INF-0990-ProgramacaoEmCSharp\\jewel_collector\\jewel_collector\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\msft39\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Juliana\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
