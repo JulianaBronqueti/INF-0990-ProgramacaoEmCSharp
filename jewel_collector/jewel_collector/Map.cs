@@ -61,6 +61,38 @@ public class Map{
         map[position[0], position[1]] = "ME";
     }
 
+    public int getSize(){
+        return size;
+    }
+
+    public void moveRobot(string command){
+        int[] new_position = new int[2];
+        int[] robot_position = robot.getPosition();
+
+        if (command.Equals("w")) {
+            new_position[0] = robot_position[0] - 1;
+            new_position[1] = robot_position[1];
+        } else if (command.Equals("a")) {
+            new_position[0] = robot_position[0];
+            new_position[1] = robot_position[1] - 1;
+        } else if (command.Equals("s")) {
+            new_position[0] = robot_position[0] + 1;
+            new_position[1] = robot_position[1];
+        } else if (command.Equals("d")) {
+            new_position[0] = robot_position[0];
+            new_position[1] = robot_position[1] + 1;        
+        }
+
+        if(new_position[0] < 0 || new_position[0] >= size || new_position[1] < 0 || new_position[1] >= size || map[new_position[0],new_position[1]] == "JR" || map[new_position[0],new_position[1]] == "JG" || map[new_position[0],new_position[1]] == "JB" || map[new_position[0],new_position[1]] == "##" || map[new_position[0],new_position[1]] == "$$"){
+            Console.WriteLine("Can't move.");
+        }
+        else{
+            map[robot_position[0], robot_position[1]] = "--";
+            map[new_position[0], new_position[1]] = "ME";
+            robot.setPosition(new_position);
+        }
+    }
+
     public void printMap(){
         for(int i=0; i<size; i++){
             for(int j=0; j<size; j++){

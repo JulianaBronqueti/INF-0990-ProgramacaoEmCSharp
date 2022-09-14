@@ -6,8 +6,12 @@ public class Robot{
         position = position_input;
     }
 
-    public void move(string side){
+    public int[] getPosition(){
+        return position;
+    }
 
+    public void setPosition(int [] new_position){
+        position = new_position;
     }
 
     public void collect(JewelType jewel){

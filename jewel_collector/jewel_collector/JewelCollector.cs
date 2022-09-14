@@ -102,15 +102,9 @@ public class JewelCollector {
 
             if (command.Equals("quit")) {
                 running = false;
-            } else if (command.Equals("w")) {
-                
-            } else if (command.Equals("a")) {
-                
-            } else if (command.Equals("s")) {
-            
-            } else if (command.Equals("d")) {
-            
-            } else if (command.Equals("g")) {
+            } else if (command.Equals("w") || command.Equals("a") || command.Equals("s") || command.Equals("d")) {
+                map.moveRobot(command);
+            } else if (command.Equals("g")){
                 
             }
         } while (running);
