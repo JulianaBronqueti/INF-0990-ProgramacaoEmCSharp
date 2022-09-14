@@ -19,10 +19,14 @@ public class Robot{
     }
 
     public int getTotalJewels(){
-        return 0;
+        return bag.Count;        
     }
 
     public int getBagValue(){
-        return 0;
+        int total = 0;
+        foreach(JewelType jewel in bag){
+            total += (int)jewel;
+        }
+        return total;
     }
 }
