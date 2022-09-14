@@ -93,6 +93,31 @@ public class Map{
         }
     }
 
+    public void collectJewel(){
+        int[] robot_position = robot.getPosition();
+        for(int i = -1; i < 2; i++){
+            for(int j = -1; j < 2; j++){
+                if(robot_position[0]+i < 0 || robot_position[0]+i >= size || robot_position[1]+j < 0 || robot_position[1]+j >= size){
+                    continue;
+                }
+                else{
+                    if(map[robot_position[0]+i, robot_position[1]+j] == "JR"){
+                        Console.WriteLine("aqui");
+                        robot.collect(JewelType.Red);
+                        map[robot_position[0]+i, robot_position[1]+j] = "--";
+                    } else if(map[robot_position[0]+i, robot_position[1]+j] == "JG"){
+                        robot.collect(JewelType.Green);
+                        map[robot_position[0]+i, robot_position[1]+j] = "--";
+                    } else if(map[robot_position[0]+i, robot_position[1]+j] == "JB"){
+                        robot.collect(JewelType.Blue);
+                        map[robot_position[0]+i, robot_position[1]+j] = "--";
+                    }
+                }
+                
+            }
+        }
+    }
+
     public void printMap(){
         for(int i=0; i<size; i++){
             for(int j=0; j<size; j++){

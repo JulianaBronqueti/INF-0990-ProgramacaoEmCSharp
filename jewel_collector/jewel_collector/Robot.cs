@@ -1,6 +1,6 @@
 public class Robot{
     int[] position;
-    JewelType[] bag;
+    List<JewelType> bag = new List<JewelType>();
 
     public Robot(int[] position_input){
         position = position_input;
@@ -15,7 +15,7 @@ public class Robot{
     }
 
     public void collect(JewelType jewel){
-
+        bag.Add(jewel);
     }
 
     public int getTotalJewels(){

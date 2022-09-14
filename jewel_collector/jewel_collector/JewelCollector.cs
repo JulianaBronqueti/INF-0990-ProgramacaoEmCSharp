@@ -105,7 +105,7 @@ public class JewelCollector {
             } else if (command.Equals("w") || command.Equals("a") || command.Equals("s") || command.Equals("d")) {
                 map.moveRobot(command);
             } else if (command.Equals("g")){
-                
+                map.collectJewel();
             }
         } while (running);
     }
