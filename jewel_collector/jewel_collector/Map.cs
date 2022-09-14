@@ -102,7 +102,6 @@ public class Map{
                 }
                 else{
                     if(map[robot_position[0]+i, robot_position[1]+j] == "JR"){
-                        Console.WriteLine("aqui");
                         robot.collect(JewelType.Red);
                         map[robot_position[0]+i, robot_position[1]+j] = "--";
                     } else if(map[robot_position[0]+i, robot_position[1]+j] == "JG"){

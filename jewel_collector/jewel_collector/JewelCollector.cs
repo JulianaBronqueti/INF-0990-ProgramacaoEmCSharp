@@ -23,16 +23,10 @@ public class JewelCollector {
                 jewel_position = jewel_position.Replace(c, string.Empty);
             }
             string[] jewel_position_array = jewel_position.Split();
-            // foreach (var c in jewel_position_array)
-            // {
-            //     Console.WriteLine(c.ToString());
-            // }
             int x_position_jewel = Convert.ToInt32(jewel_position_array[2]);
             int y_position_jewel = Convert.ToInt32(jewel_position_array[3]);
             if(x_position_jewel<0 || y_position_jewel<0 || x_position_jewel>=dimension || y_position_jewel>=dimension){
                 Console.WriteLine("Invalid position.");
-                // Console.WriteLine($"x position {x_position}");
-                // Console.WriteLine($"y position {y_position}");
                 i = i - 1;
             }
             else{
@@ -52,16 +46,10 @@ public class JewelCollector {
                 obstacle_position = obstacle_position.Replace(c, string.Empty);
             }
             string[] obstacle_position_array = obstacle_position.Split();
-            // foreach (var c in jewel_position_array)
-            // {
-            //     Console.WriteLine(c.ToString());
-            // }
             int x_position_obstacle = Convert.ToInt32(obstacle_position_array[2]);
             int y_position_obstacle = Convert.ToInt32(obstacle_position_array[3]);
             if(x_position_obstacle<0 || y_position_obstacle<0 || x_position_obstacle>=dimension || y_position_obstacle>=dimension){
                 Console.WriteLine("Invalid position.");
-                // Console.WriteLine($"x position {x_position}");
-                // Console.WriteLine($"y position {y_position}");
                 i = i - 1;
             }
             else{
@@ -77,16 +65,10 @@ public class JewelCollector {
             robot_position = robot_position.Replace(c, string.Empty);
         }
         string[] robot_position_array = robot_position.Split();
-        // foreach (var c in jewel_position_array)
-        // {
-        //     Console.WriteLine(c.ToString());
-        // }
         int x_position = Convert.ToInt32(robot_position_array[0]);
         int y_position = Convert.ToInt32(robot_position_array[1]);
         if(x_position<0 || y_position<0 || x_position>=dimension || y_position>=dimension){
             Console.WriteLine("Invalid position.");
-            // Console.WriteLine($"x position {x_position}");
-            // Console.WriteLine($"y position {y_position}");
         }
         else{
             int[] position = new int[2] {x_position, y_position};
