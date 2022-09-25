@@ -1,3 +1,5 @@
+public delegate void GameOverHandler(string reason);
+
 public class Map{
     int size;
     IItem[,] map;
@@ -129,10 +131,12 @@ public class Map{
             //     robot.setEnergy(-1);
             // }
         }
-        else{
-            Console.WriteLine("Robot without energy! Game over!");
+        if(robot.getEnergy() < 1){
+            GameOver("energy");
         }
     }
+
+    public event GameOverHandler GameOver;
 
     public void useItem(){
         int[] robot_position = robot!.getPosition();
@@ -146,7 +150,10 @@ public class Map{
                     if(map[robot_position[0]+i, robot_position[1]+j].isCollectable()){
                         Jewel jewel_to_remove = (Jewel)map[robot_position[0]+i, robot_position[1]+j];
                         jewels.Remove(jewel_to_remove.getType());
-                        map[robot_position[0]+i, robot_position[1]+j] = new EmptySpace();   
+                        map[robot_position[0]+i, robot_position[1]+j] = new EmptySpace();
+                        if(jewels.Count == 0){
+                            GameOver("win");
+                        }   
                     }
                     // if(map[robot_position[0]+i, robot_position[1]+j].GetType().ToString() == "JR"){
                     //     robot.collect(JewelType.Red);

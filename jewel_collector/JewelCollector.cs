@@ -4,9 +4,21 @@
 /// </summary>
 public class JewelCollector {
 
-    public static void Main() {
+    static bool running = true;
 
-        bool running = true;
+    static void EnterCommands(string reason){
+        if(reason == "win"){
+            Console.WriteLine("You win! Congratulations!");
+            Console.WriteLine("New Game: ");
+            running = true;
+        }
+        else if(reason == "energy"){
+            Console.WriteLine("Robot without energy! Game over!");
+            running = false;
+        }
+    }
+
+    public static void Main() {
 
         Console.WriteLine("Enter the board dimension: ");
         int dimension = Convert.ToInt32(Console.ReadLine());
@@ -80,6 +92,8 @@ public class JewelCollector {
 
         Console.WriteLine("Let's start!!");
 
+        map.GameOver += EnterCommands;
+
         do {
             map.printMap();    
             Console.WriteLine("Enter the command: ");
@@ -93,5 +107,6 @@ public class JewelCollector {
                 map.useItem();
             }
         } while (running);
+        
     }
 }
