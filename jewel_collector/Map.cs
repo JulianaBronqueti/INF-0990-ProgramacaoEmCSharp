@@ -1,8 +1,11 @@
 public class Map{
     int size;
     IItem[,] map;
-    List<Jewel> jewels = new List<Jewel>();
-    List<Obstacle> obstacles = new List<Obstacle>();
+    /// <summary>
+    /// Como pedido no enunciado, estou usando uma coleção para salvar as jóias presentes no mapa. Quando essa lista estiver vazia, o usuário irá para a próxima fase do jogo.
+    /// </summary>
+    /// <typeparam name="Jewel">O tipo de cada item da lista será Jewel, que contém as informações da jóia em questão, como posição e tipo.</typeparam>
+    List<JewelType> jewels = new List<JewelType>();
     Robot? robot;
 
     public Map(int size_input){
@@ -19,16 +22,19 @@ public class Map{
         switch(jewel_input){
             case "Red":
                 // jewels.Add(new Jewel(position, JewelType.Red));
+                jewels.Add(JewelType.Red);
                 map[position[0], position[1]] = new Jewel(position, JewelType.Red);
                 Console.WriteLine("Red added");
                 break;
             case "Green":
-                // jewels.Add(new Jewel(position, JewelType.Red));
+                // jewels.Add(new Jewel(position, JewelType.Green));
+                jewels.Add(JewelType.Green);
                 map[position[0], position[1]] = new Jewel(position, JewelType.Green);
                 Console.WriteLine("Green added"); 
                 break;
             case "Blue":
-                // jewels.Add(new Jewel(position, JewelType.Red));
+                // jewels.Add(new Jewel(position, JewelType.Blue));
+                jewels.Add(JewelType.Blue);
                 map[position[0], position[1]] = new Jewel(position, JewelType.Blue);
                 Console.WriteLine("Blue added");
                 break;
@@ -138,7 +144,9 @@ public class Map{
                 else{
                     map[robot_position[0]+i, robot_position[1]+j].useItem(robot);
                     if(map[robot_position[0]+i, robot_position[1]+j].isCollectable()){
-                        map[robot_position[0]+i, robot_position[1]+j] = new EmptySpace();
+                        Jewel jewel_to_remove = (Jewel)map[robot_position[0]+i, robot_position[1]+j];
+                        jewels.Remove(jewel_to_remove.getType());
+                        map[robot_position[0]+i, robot_position[1]+j] = new EmptySpace();   
                     }
                     // if(map[robot_position[0]+i, robot_position[1]+j].GetType().ToString() == "JR"){
                     //     robot.collect(JewelType.Red);

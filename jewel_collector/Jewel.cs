@@ -30,4 +30,8 @@ public class Jewel: IItem{
     public bool isCollectable(){
         return true;
     }
+
+    public JewelType getType(){
+        return jewel_type;
+    }
 }
