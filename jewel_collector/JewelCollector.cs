@@ -17,12 +17,12 @@ public class JewelCollector {
 
         for(int i=0; i<n_jewels; i++){
             Console.WriteLine("Insert the type of jewel and position: ");
-            string jewel_position = Console.ReadLine();
+            string? jewel_position = Console.ReadLine();
             foreach (var c in charsToRemove)
             {
-                jewel_position = jewel_position.Replace(c, string.Empty);
+                jewel_position = jewel_position!.Replace(c, string.Empty);
             }
-            string[] jewel_position_array = jewel_position.Split();
+            string[] jewel_position_array = jewel_position!.Split();
             int x_position_jewel = Convert.ToInt32(jewel_position_array[2]);
             int y_position_jewel = Convert.ToInt32(jewel_position_array[3]);
             if(x_position_jewel<0 || y_position_jewel<0 || x_position_jewel>=dimension || y_position_jewel>=dimension){
@@ -40,12 +40,12 @@ public class JewelCollector {
 
         for(int i=0; i<n_obstacles; i++){
             Console.WriteLine("Insert the type of obstacle and position: ");
-            string obstacle_position = Console.ReadLine();
+            string? obstacle_position = Console.ReadLine();
             foreach (var c in charsToRemove)
             {
-                obstacle_position = obstacle_position.Replace(c, string.Empty);
+                obstacle_position = obstacle_position!.Replace(c, string.Empty);
             }
-            string[] obstacle_position_array = obstacle_position.Split();
+            string[] obstacle_position_array = obstacle_position!.Split();
             int x_position_obstacle = Convert.ToInt32(obstacle_position_array[2]);
             int y_position_obstacle = Convert.ToInt32(obstacle_position_array[3]);
             if(x_position_obstacle<0 || y_position_obstacle<0 || x_position_obstacle>=dimension || y_position_obstacle>=dimension){
@@ -59,12 +59,12 @@ public class JewelCollector {
         }
 
         Console.WriteLine("Insert the robot inicial position: ");
-        string robot_position = Console.ReadLine();
+        string? robot_position = Console.ReadLine();
         foreach (var c in charsToRemove)
         {
-            robot_position = robot_position.Replace(c, string.Empty);
+            robot_position = robot_position!.Replace(c, string.Empty);
         }
-        string[] robot_position_array = robot_position.Split();
+        string[] robot_position_array = robot_position!.Split();
         int x_position = Convert.ToInt32(robot_position_array[0]);
         int y_position = Convert.ToInt32(robot_position_array[1]);
         if(x_position<0 || y_position<0 || x_position>=dimension || y_position>=dimension){
@@ -80,9 +80,9 @@ public class JewelCollector {
         do {
             map.printMap();    
             Console.WriteLine("Enter the command: ");
-            string command = Console.ReadLine();
+            string? command = Console.ReadLine();
 
-            if (command.Equals("quit")) {
+            if (command!.Equals("quit")) {
                 running = false;
             } else if (command.Equals("w") || command.Equals("a") || command.Equals("s") || command.Equals("d")) {
                 map.moveRobot(command);

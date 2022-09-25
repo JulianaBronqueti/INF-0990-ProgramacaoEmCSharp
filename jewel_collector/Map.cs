@@ -3,7 +3,7 @@ public class Map{
     string[,] map;
     List<Jewel> jewels = new List<Jewel>();
     List<Obstacle> obstacles = new List<Obstacle>();
-    Robot robot;
+    Robot? robot;
 
     public Map(int size_input){
         size = size_input;
@@ -67,7 +67,7 @@ public class Map{
 
     public void moveRobot(string command){
         int[] new_position = new int[2];
-        int[] robot_position = robot.getPosition();
+        int[] robot_position = robot!.getPosition();
 
         if (command.Equals("w")) {
             new_position[0] = robot_position[0] - 1;
@@ -94,7 +94,7 @@ public class Map{
     }
 
     public void collectJewel(){
-        int[] robot_position = robot.getPosition();
+        int[] robot_position = robot!.getPosition();
         for(int i = -1; i < 2; i++){
             for(int j = -1; j < 2; j++){
                 if(robot_position[0]+i < 0 || robot_position[0]+i >= size || robot_position[1]+j < 0 || robot_position[1]+j >= size){
@@ -124,6 +124,6 @@ public class Map{
             }
             Console.WriteLine();
         }
-        Console.WriteLine($"Bag total items: {robot.getTotalJewels().ToString()} | Bag total value: {robot.getBagValue().ToString()}");
+        Console.WriteLine($"Bag total items: {robot!.getTotalJewels().ToString()} | Bag total value: {robot.getBagValue().ToString()}");
     }
 }
