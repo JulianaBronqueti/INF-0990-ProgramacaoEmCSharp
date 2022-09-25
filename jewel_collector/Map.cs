@@ -24,19 +24,16 @@ public class Map{
         if(map[position[0], position[1]].ToString() == "--"){
             switch(jewel_input){
                 case "Red":
-                    // jewels.Add(new Jewel(position, JewelType.Red));
                     jewels.Add(JewelType.Red);
                     map[position[0], position[1]] = new Jewel(position, JewelType.Red);
                     Console.WriteLine("Red added");
                     break;
                 case "Green":
-                    // jewels.Add(new Jewel(position, JewelType.Green));
                     jewels.Add(JewelType.Green);
                     map[position[0], position[1]] = new Jewel(position, JewelType.Green);
                     Console.WriteLine("Green added"); 
                     break;
                 case "Blue":
-                    // jewels.Add(new Jewel(position, JewelType.Blue));
                     jewels.Add(JewelType.Blue);
                     map[position[0], position[1]] = new Jewel(position, JewelType.Blue);
                     Console.WriteLine("Blue added");
@@ -52,17 +49,14 @@ public class Map{
         if(map[position[0], position[1]].ToString() == "--"){
             switch(obstacle_input){
                 case "Water":
-                    // obstacles.Add(new Obstacle(position, ObstacleType.Water));
                     map[position[0], position[1]] = new Obstacle(position, ObstacleType.Water);
                     Console.WriteLine("Water added");
                     break;
                 case "Tree":
-                    // obstacles.Add(new Obstacle(position, ObstacleType.Tree));
                     map[position[0], position[1]] = new Obstacle(position, ObstacleType.Tree);
                     Console.WriteLine("Tree added");
                     break;
                 case "Radioactive":
-                    // obstacles.Add(new Obstacle(position, ObstacleType.Tree));
                     map[position[0], position[1]] = new Obstacle(position, ObstacleType.Radioactive);
                     Console.WriteLine("Radioactive added");
                     break;
@@ -138,16 +132,6 @@ public class Map{
             catch(InvalidDataException){
                 Console.WriteLine("Can't move, item (jewel or obstacle) ahead.");
             }
-
-            // if(new_position[0] < 0 || new_position[0] >= size || new_position[1] < 0 || new_position[1] >= size || map[new_position[0],new_position[1]].GetType().ToString() != "EmptySpace"){
-            //     Console.WriteLine("Can't move.");
-            // }
-            // else{
-            //     map[robot_position[0], robot_position[1]] = map[new_position[0], new_position[1]];
-            //     map[new_position[0], new_position[1]] = robot;
-            //     robot.setPosition(new_position);
-            //     robot.setEnergy(-1);
-            // }
         }
         if(robot.getEnergy() < 1){
             GameOver!("energy");
@@ -173,48 +157,11 @@ public class Map{
                             GameOver!("win");
                         }   
                     }
-                    // if(map[robot_position[0]+i, robot_position[1]+j].GetType().ToString() == "JR"){
-                    //     robot.collect(JewelType.Red);
-                        
-                    // } else if(map[robot_position[0]+i, robot_position[1]+j].GetType().ToString() == "JG"){
-                    //     robot.collect(JewelType.Green);
-                    //     map[robot_position[0]+i, robot_position[1]+j] = new EmptySpace();
-                    // } else if(map[robot_position[0]+i, robot_position[1]+j].GetType().ToString() == "JB"){
-                    //     robot.collect(JewelType.Blue);
-                    //     robot.setEnergy(5);
-                    //     map[robot_position[0]+i, robot_position[1]+j] = new EmptySpace();
-                    // } else if(map[robot_position[0]+i, robot_position[1]+j].GetType().ToString() == "$$"){
-                    //     robot.setEnergy(3);
-                    // }
                 }
                 
             }
         }
     }
-
-    // public void collectJewel(){
-    //     int[] robot_position = robot!.getPosition();
-    //     for(int i = -1; i < 2; i++){
-    //         for(int j = -1; j < 2; j++){
-    //             if(robot_position[0]+i < 0 || robot_position[0]+i >= size || robot_position[1]+j < 0 || robot_position[1]+j >= size){
-    //                 continue;
-    //             }
-    //             else{
-    //                 if(map[robot_position[0]+i, robot_position[1]+j] == "JR"){
-    //                     robot.collect(JewelType.Red);
-    //                     map[robot_position[0]+i, robot_position[1]+j] = "--";
-    //                 } else if(map[robot_position[0]+i, robot_position[1]+j] == "JG"){
-    //                     robot.collect(JewelType.Green);
-    //                     map[robot_position[0]+i, robot_position[1]+j] = "--";
-    //                 } else if(map[robot_position[0]+i, robot_position[1]+j] == "JB"){
-    //                     robot.collect(JewelType.Blue);
-    //                     map[robot_position[0]+i, robot_position[1]+j] = "--";
-    //                 }
-    //             }
-                
-    //         }
-    //     }
-    // }
 
     public void printMap(){
         for(int i=0; i<size; i++){
