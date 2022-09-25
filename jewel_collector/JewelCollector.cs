@@ -23,7 +23,7 @@ public class JewelCollector {
     static void randomMap(){
         Random rnd = new Random();
         // A cada nova fase, o mapa aumenta suas dimensões em 1 unidade, até o limite máximo de (30, 30) unidades
-        int dimension = map.getSize()+1;
+        int dimension = map!.getSize()+1;
         if(dimension <= 30){
             map = new Map(dimension);
         }
@@ -174,7 +174,7 @@ public class JewelCollector {
 
     public static void Main() {
         newMap();
-        map.GameOver += EnterCommands;
+        map!.GameOver += EnterCommands;
 
         do {
             map.printMap();    
