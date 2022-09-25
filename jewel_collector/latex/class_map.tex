@@ -53,11 +53,6 @@ A classe \mbox{\hyperlink{class_map}{Map}} implementa o mapa, com a criação de
 
 O método move\+Robot é responsável por, a partir do comando dado como argumento, verificar se o robô ainda pode se movimentar (energia \texorpdfstring{$>$}{>} 0) e se a nova posição é válida. Nesse método é utilizado tratamento de exceções justamente para lidar com o robô tentando passar dos limites do mapa ou ir para uma posição já ocupada. Como esse método verifica o nível de energia do robô, se este for menor ou igual a 0, ele é responsável por disparar o evento de Game\+Over.  
 
-
-\begin{DoxyParams}{Parameters}
-{\em command} & \\
-\hline
-\end{DoxyParams}
 Como pedido no enunciado foi usado o tratamento por exceções para quando o robô tenta se deslocar para uma posição fora dos limites do mapa e quando o robô tenta se deslocar para uma posição ocupada por outro item. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

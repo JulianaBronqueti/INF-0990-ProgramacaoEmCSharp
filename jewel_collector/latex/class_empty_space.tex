@@ -1,5 +1,10 @@
 \hypertarget{class_empty_space}{}\doxysection{Empty\+Space Class Reference}
 \label{class_empty_space}\index{EmptySpace@{EmptySpace}}
+
+
+A classe \mbox{\hyperlink{class_empty_space}{Empty\+Space}} herda de \mbox{\hyperlink{interface_i_item}{IItem}} e simboliza um espaço vazio no mapa.   
+
+
 Inheritance diagram for Empty\+Space\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,8 +15,11 @@ Inheritance diagram for Empty\+Space\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 override string \mbox{\hyperlink{class_empty_space_ada48200068f83677370443a598755c81}{To\+String}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em O método To\+String é um método que diz como o item tem que ser escrito no mapa (que é onde uso o método To\+String para os itens).  \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+A classe \mbox{\hyperlink{class_empty_space}{Empty\+Space}} herda de \mbox{\hyperlink{interface_i_item}{IItem}} e simboliza um espaço vazio no mapa.  
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_empty_space_ada48200068f83677370443a598755c81}\label{class_empty_space_ada48200068f83677370443a598755c81}} 
@@ -22,7 +30,14 @@ override string \mbox{\hyperlink{class_empty_space_ada48200068f83677370443a59875
 
 
 
-Implements \mbox{\hyperlink{interface_i_item}{IItem}}.
+O método To\+String é um método que diz como o item tem que ser escrito no mapa (que é onde uso o método To\+String para os itens).  
+
+\begin{DoxyReturn}{Returns}
+Por padrão retorna como um campo vazio, isso porque o método é sobrescrito pelas classes que extendem \mbox{\hyperlink{interface_i_item}{IItem}}.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_item_ad9bf9eba448ecfa5fb8b9d0ac67c6d85}{IItem}}.
 
 
 

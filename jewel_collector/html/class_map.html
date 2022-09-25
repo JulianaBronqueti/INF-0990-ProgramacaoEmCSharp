@@ -104,7 +104,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>getSize</b> ()</td></t
 <tr class="separator:a73e06e2cbdf172230060e696f0a1d826"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7198724a171c81cc4df5f2202b1d75c9"><td class="memItemLeft" align="right" valign="top"><a id="a7198724a171c81cc4df5f2202b1d75c9" name="a7198724a171c81cc4df5f2202b1d75c9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>useItem</b> ()</td></tr>
-<tr class="memdesc:a7198724a171c81cc4df5f2202b1d75c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">O método useItem é responsável por, a partir da posição do robô, verificar se há alguma posição adjacente a ele que exista um item usável, como as jóias que são coletadas e a jóia azul e o obstáculo árvore que podem ser usados para recuperar energia. É possível trabalhar dessa forma, pois estou usando iterface <a class="el" href="interface_i_item.html">IItem</a> para trabalhar com as jóias e os obstáculos conjuntamente. Como esse método coleta as jóias, removendo-as do mapa, consegue verificar se já foram todas coletadas, e em caso positivo pode disparar o evento de GameOver como ganho pelo jogador, podendo ir para a próxima fase.  <br /></td></tr>
+<tr class="memdesc:a7198724a171c81cc4df5f2202b1d75c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">O método useItem é responsável por, a partir da posição do robô, verificar se há alguma posição adjacente a ele que exista um item usável, como as jóias que são coletadas e a jóia azul e o obstáculo árvore que podem ser usados para recuperar energia. É possível trabalhar dessa forma, pois estou usando iterface <a class="el" href="interface_i_item.html" title="A interface IItem conecta todos os itens presentes no mapa (jóias, obstáculos, robô e espaços vazios)...">IItem</a> para trabalhar com as jóias e os obstáculos conjuntamente. Como esse método coleta as jóias, removendo-as do mapa, consegue verificar se já foram todas coletadas, e em caso positivo pode disparar o evento de GameOver como ganho pelo jogador, podendo ir para a próxima fase.  <br /></td></tr>
 <tr class="separator:a7198724a171c81cc4df5f2202b1d75c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53bcf3c9e53e6422387a1420e065da7b"><td class="memItemLeft" align="right" valign="top"><a id="a53bcf3c9e53e6422387a1420e065da7b" name="a53bcf3c9e53e6422387a1420e065da7b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>printMap</b> ()</td></tr>
@@ -146,12 +146,6 @@ GameOverHandler?&#160;</td><td class="memItemRight" valign="bottom"><b>GameOver<
 </div><div class="memdoc">
 
 <p>O método moveRobot é responsável por, a partir do comando dado como argumento, verificar se o robô ainda pode se movimentar (energia &gt; 0) e se a nova posição é válida. Nesse método é utilizado tratamento de exceções justamente para lidar com o robô tentando passar dos limites do mapa ou ir para uma posição já ocupada. Como esse método verifica o nível de energia do robô, se este for menor ou igual a 0, ele é responsável por disparar o evento de GameOver.  </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">command</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 <p >Como pedido no enunciado foi usado o tratamento por exceções para quando o robô tenta se deslocar para uma posição fora dos limites do mapa e quando o robô tenta se deslocar para uma posição ocupada por outro item. </p>
 
 </div>

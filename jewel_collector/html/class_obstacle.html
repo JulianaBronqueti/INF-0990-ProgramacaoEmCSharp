@@ -75,13 +75,16 @@ $(function() {
   <div class="headertitle"><div class="title">Obstacle Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A classe <a class="el" href="class_obstacle.html" title="A classe Obstacle herda de IItem e implementa os obstáculos, guardando sua posição e tipo,...">Obstacle</a> herda de <a class="el" href="interface_i_item.html" title="A interface IItem conecta todos os itens presentes no mapa (jóias, obstáculos, robô e espaços vazios)...">IItem</a> e implementa os obstáculos, guardando sua posição e tipo, além de métodos para se interagir com estes e obter informações sobre eles.   
+ <a href="class_obstacle.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Obstacle:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_obstacle.png" usemap="#Obstacle_map" alt=""/>
   <map id="Obstacle_map" name="Obstacle_map">
-<area href="interface_i_item.html" alt="IItem" shape="rect" coords="0,0,62,24"/>
+<area href="interface_i_item.html" title="A interface IItem conecta todos os itens presentes no mapa (jóias, obstáculos, robô e espaços vazios)..." alt="IItem" shape="rect" coords="0,0,62,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -91,22 +94,27 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Obstacle</b> (int[] position_input, ObstacleType obstacle_type_input)</td></tr>
 <tr class="separator:a5e10d63c8015a3ce026b3eaf72e8b1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d711674e6d21779907acd4c170542e3"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obstacle.html#a4d711674e6d21779907acd4c170542e3">ToString</a> ()</td></tr>
+<tr class="memdesc:a4d711674e6d21779907acd4c170542e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">O método ToString é um método herdado da interface <a class="el" href="interface_i_item.html" title="A interface IItem conecta todos os itens presentes no mapa (jóias, obstáculos, robô e espaços vazios)...">IItem</a>, que diz como o item tem que ser escrito no mapa (que é onde uso o método ToString para os itens).   <a href="class_obstacle.html#a4d711674e6d21779907acd4c170542e3">More...</a><br /></td></tr>
 <tr class="separator:a4d711674e6d21779907acd4c170542e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae16e8cc63247f76bed72197b2e87217a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obstacle.html#ae16e8cc63247f76bed72197b2e87217a">useItem</a> (<a class="el" href="class_robot.html">Robot</a> robot)</td></tr>
+<tr class="memdesc:ae16e8cc63247f76bed72197b2e87217a"><td class="mdescLeft">&#160;</td><td class="mdescRight">O método useItem é um método herdado da interface <a class="el" href="interface_i_item.html" title="A interface IItem conecta todos os itens presentes no mapa (jóias, obstáculos, robô e espaços vazios)...">IItem</a>, o qual vai definir como aquele item é usado. No caso dos obstáculos, estes podem dar energia (obstáculo árvore). Portanto esse método verifica se o obstáculo é a árvore ou não, chamando o método setEnergy da classe <a class="el" href="class_robot.html" title="A classe Robot herda de IItem e implementa o robô, guardando sua posição, mochila (lista de jóias col...">Robot</a> se positivo, para dar energia ao robô.   <a href="class_obstacle.html#ae16e8cc63247f76bed72197b2e87217a">More...</a><br /></td></tr>
 <tr class="separator:ae16e8cc63247f76bed72197b2e87217a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58fd3e477c6e617b41f0713dc5458d00"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obstacle.html#a58fd3e477c6e617b41f0713dc5458d00">isCollectable</a> ()</td></tr>
+<tr class="memdesc:a58fd3e477c6e617b41f0713dc5458d00"><td class="mdescLeft">&#160;</td><td class="mdescRight">O método isCollectable é herdado da interface <a class="el" href="interface_i_item.html" title="A interface IItem conecta todos os itens presentes no mapa (jóias, obstáculos, robô e espaços vazios)...">IItem</a>, e indica se o item é coletável ou somente usável.   <a href="class_obstacle.html#a58fd3e477c6e617b41f0713dc5458d00">More...</a><br /></td></tr>
 <tr class="separator:a58fd3e477c6e617b41f0713dc5458d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9bf9eba448ecfa5fb8b9d0ac67c6d85"><td class="memItemLeft" align="right" valign="top"><a id="ad9bf9eba448ecfa5fb8b9d0ac67c6d85" name="ad9bf9eba448ecfa5fb8b9d0ac67c6d85"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>ToString</b> ()</td></tr>
+<tr class="memitem:ad9bf9eba448ecfa5fb8b9d0ac67c6d85"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_item.html#ad9bf9eba448ecfa5fb8b9d0ac67c6d85">ToString</a> ()</td></tr>
+<tr class="memdesc:ad9bf9eba448ecfa5fb8b9d0ac67c6d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">O método ToString é um método que diz como o item tem que ser escrito no mapa (que é onde uso o método ToString para os itens).   <a href="interface_i_item.html#ad9bf9eba448ecfa5fb8b9d0ac67c6d85">More...</a><br /></td></tr>
 <tr class="separator:ad9bf9eba448ecfa5fb8b9d0ac67c6d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e2b922e00d939801a3800187c7adb8f"><td class="memItemLeft" align="right" valign="top"><a id="a7e2b922e00d939801a3800187c7adb8f" name="a7e2b922e00d939801a3800187c7adb8f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>useItem</b> (<a class="el" href="class_robot.html">Robot</a> robot)</td></tr>
+<tr class="memitem:a7e2b922e00d939801a3800187c7adb8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_item.html#a7e2b922e00d939801a3800187c7adb8f">useItem</a> (<a class="el" href="class_robot.html">Robot</a> robot)</td></tr>
+<tr class="memdesc:a7e2b922e00d939801a3800187c7adb8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">O método useItem vai definir como o item é usado.   <a href="interface_i_item.html#a7e2b922e00d939801a3800187c7adb8f">More...</a><br /></td></tr>
 <tr class="separator:a7e2b922e00d939801a3800187c7adb8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba88ef31d547baec283576b537708671"><td class="memItemLeft" align="right" valign="top"><a id="aba88ef31d547baec283576b537708671" name="aba88ef31d547baec283576b537708671"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isCollectable</b> ()</td></tr>
+<tr class="memitem:aba88ef31d547baec283576b537708671"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_item.html#aba88ef31d547baec283576b537708671">isCollectable</a> ()</td></tr>
+<tr class="memdesc:aba88ef31d547baec283576b537708671"><td class="mdescLeft">&#160;</td><td class="mdescRight">O método isCollectable indica se o item é coletável ou somente usável.   <a href="interface_i_item.html#aba88ef31d547baec283576b537708671">More...</a><br /></td></tr>
 <tr class="separator:aba88ef31d547baec283576b537708671"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >A classe <a class="el" href="class_obstacle.html" title="A classe Obstacle herda de IItem e implementa os obstáculos, guardando sua posição e tipo,...">Obstacle</a> herda de <a class="el" href="interface_i_item.html" title="A interface IItem conecta todos os itens presentes no mapa (jóias, obstáculos, robô e espaços vazios)...">IItem</a> e implementa os obstáculos, guardando sua posição e tipo, além de métodos para se interagir com estes e obter informações sobre eles.  </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a58fd3e477c6e617b41f0713dc5458d00" name="a58fd3e477c6e617b41f0713dc5458d00"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a58fd3e477c6e617b41f0713dc5458d00">&#9670;&#160;</a></span>isCollectable()</h2>
 
@@ -130,7 +138,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isCollectable</b> ()<
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="interface_i_item.html">IItem</a>.</p>
+<p>O método isCollectable é herdado da interface <a class="el" href="interface_i_item.html" title="A interface IItem conecta todos os itens presentes no mapa (jóias, obstáculos, robô e espaços vazios)...">IItem</a>, e indica se o item é coletável ou somente usável.  </p>
+<dl class="section return"><dt>Returns</dt><dd>Se o item for usável, retorna verdadeiro, caso contrário retorna falso. Como nesse caso estamos falando de obstáculos, essa classe sempre retorna falso nesse método.</dd></dl>
+
+<p>Implements <a class="el" href="interface_i_item.html#aba88ef31d547baec283576b537708671">IItem</a>.</p>
 
 </div>
 </div>
@@ -157,7 +168,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isCollectable</b> ()<
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="interface_i_item.html">IItem</a>.</p>
+<p>O método ToString é um método herdado da interface <a class="el" href="interface_i_item.html" title="A interface IItem conecta todos os itens presentes no mapa (jóias, obstáculos, robô e espaços vazios)...">IItem</a>, que diz como o item tem que ser escrito no mapa (que é onde uso o método ToString para os itens).  </p>
+<dl class="section return"><dt>Returns</dt><dd>Como o item obstáculo tem que ser interpretado em string.</dd></dl>
+
+<p>Implements <a class="el" href="interface_i_item.html#ad9bf9eba448ecfa5fb8b9d0ac67c6d85">IItem</a>.</p>
 
 </div>
 </div>
@@ -185,7 +199,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isCollectable</b> ()<
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="interface_i_item.html">IItem</a>.</p>
+<p>O método useItem é um método herdado da interface <a class="el" href="interface_i_item.html" title="A interface IItem conecta todos os itens presentes no mapa (jóias, obstáculos, robô e espaços vazios)...">IItem</a>, o qual vai definir como aquele item é usado. No caso dos obstáculos, estes podem dar energia (obstáculo árvore). Portanto esse método verifica se o obstáculo é a árvore ou não, chamando o método setEnergy da classe <a class="el" href="class_robot.html" title="A classe Robot herda de IItem e implementa o robô, guardando sua posição, mochila (lista de jóias col...">Robot</a> se positivo, para dar energia ao robô.  </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">robot</td><td>Como é o método setEnergy da classe <a class="el" href="class_robot.html" title="A classe Robot herda de IItem e implementa o robô, guardando sua posição, mochila (lista de jóias col...">Robot</a> que atualiza a energia do robô, então é necessário que se tenha a instância de robô utilizada.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="interface_i_item.html#a7e2b922e00d939801a3800187c7adb8f">IItem</a>.</p>
 
 </div>
 </div>

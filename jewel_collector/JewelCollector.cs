@@ -1,4 +1,43 @@
-﻿/// <summary>
+﻿/*! \mainpage Juliana Bronqueti - Projeto INF0990 - Curso Tecnologias Microsoft
+ *
+ * \section intro_sec Introduction
+ *
+ * Projeto apresentado a matéria INF-0990 - Programação em C# do curso de Tecnologias Microsoft do Instituto de Computação da UNICAMP.
+ * Trata-se do jogo JewelCollector, cujas especificações estão nas páginas \link https://moodle.lab.ic.unicamp.br/moodle/mod/page/view.php?id=14149 \endlink e \link https://moodle.lab.ic.unicamp.br/moodle/mod/page/view.php?id=14181 \endlink
+ *
+ * \section install_sec Observações
+ *
+ * O código foi feito para coletar o tabuleiro do usuário. Para o caso de teste dado na descrição de trabalho, o tipo da entrada aceita pelo programa é:
+
+    10\n
+    6\n
+    Red - (1, 9)\n
+    Red - (8, 8)\n
+    Green - (9, 1)\n
+    Green - (7, 6)\n
+    Blue - (3, 4)\n
+    Blue - (2, 1)\n
+    12\n
+    Water - (5, 0)\n
+    Water - (5, 1)\n
+    Water - (5, 2)\n
+    Water - (5, 3)\n
+    Water - (5, 4)\n
+    Water - (5, 5)\n
+    Water - (5, 6)\n
+    Tree - (5, 9)\n
+    Tree - (3, 9)\n
+    Tree - (8, 3)\n
+    Tree - (2, 5)\n
+    Tree - (1, 4)\n
+    (0, 0)\n
+
+
+    Colocando essa entrada desta forma será possível iniciar o jogo.
+ *
+ */
+
+/// <summary>
 /// JewelCollector: classe de início do programa, a qual receberá os parametros do usuário para criação do tabuleiro e instanciará os principais elementos do jogo (mapa e robô).
 /// </summary>
 public class JewelCollector {

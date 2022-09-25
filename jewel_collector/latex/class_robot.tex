@@ -1,5 +1,10 @@
 \hypertarget{class_robot}{}\doxysection{Robot Class Reference}
 \label{class_robot}\index{Robot@{Robot}}
+
+
+A classe \mbox{\hyperlink{class_robot}{Robot}} herda de \mbox{\hyperlink{interface_i_item}{IItem}} e implementa o robô, guardando sua posição, mochila (lista de jóias coletada) e nível de energia.   
+
+
 Inheritance diagram for Robot\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -12,32 +17,125 @@ Inheritance diagram for Robot\+:\begin{figure}[H]
 \mbox{\Hypertarget{class_robot_aa5a74024c0e7a9060c392b0a9b04d8b1}\label{class_robot_aa5a74024c0e7a9060c392b0a9b04d8b1}} 
 {\bfseries Robot} (int\mbox{[}$\,$\mbox{]} position\+\_\+input)
 \item 
-\mbox{\Hypertarget{class_robot_a2bd75a5b60af6740cd8e18f87082ecba}\label{class_robot_a2bd75a5b60af6740cd8e18f87082ecba}} 
-int\mbox{[}$\,$\mbox{]} {\bfseries get\+Position} ()
-\item 
-\mbox{\Hypertarget{class_robot_acbfd7b62358778593ebbecfdca887ade}\label{class_robot_acbfd7b62358778593ebbecfdca887ade}} 
-void {\bfseries set\+Position} (int\mbox{[}$\,$\mbox{]} new\+\_\+position)
-\item 
-\mbox{\Hypertarget{class_robot_abb8f883c234cbdf55d428f0d747e8d12}\label{class_robot_abb8f883c234cbdf55d428f0d747e8d12}} 
-void {\bfseries set\+Energy} (int value)
-\item 
-\mbox{\Hypertarget{class_robot_a5a312d597efad6c3a0344aedd30a0edc}\label{class_robot_a5a312d597efad6c3a0344aedd30a0edc}} 
-int {\bfseries get\+Energy} ()
-\item 
-\mbox{\Hypertarget{class_robot_a6f1a69fcbc220de7b5aef7e599231b49}\label{class_robot_a6f1a69fcbc220de7b5aef7e599231b49}} 
-void {\bfseries collect} (Jewel\+Type jewel)
-\item 
-\mbox{\Hypertarget{class_robot_ad342241f749d83712c1ce6413168a807}\label{class_robot_ad342241f749d83712c1ce6413168a807}} 
-int {\bfseries get\+Total\+Jewels} ()
-\item 
-\mbox{\Hypertarget{class_robot_ac33e2916ae5137cb79e0e6de664e3f1d}\label{class_robot_ac33e2916ae5137cb79e0e6de664e3f1d}} 
-int {\bfseries get\+Bag\+Value} ()
-\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_robot_a2bd75a5b60af6740cd8e18f87082ecba}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em O método get\+Position retorna a posição atual do robô.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_acbfd7b62358778593ebbecfdca887ade}{set\+Position}} (int\mbox{[}$\,$\mbox{]} new\+\_\+position)
+\begin{DoxyCompactList}\small\item\em O método set\+Position atualiza a posição atual do robô.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_abb8f883c234cbdf55d428f0d747e8d12}{set\+Energy}} (int value)
+\begin{DoxyCompactList}\small\item\em O método set\+Position atualiza a energia atual do robô.  \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_robot_a5a312d597efad6c3a0344aedd30a0edc}{get\+Energy}} ()
+\begin{DoxyCompactList}\small\item\em O método get\+Energy retorna a quantidade de energia atual do robô.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_robot_a6f1a69fcbc220de7b5aef7e599231b49}{collect}} (Jewel\+Type jewel)
+\begin{DoxyCompactList}\small\item\em O método collect implementa a coleta da jóia e coloca esta na mochila do robô.  \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_robot_ad342241f749d83712c1ce6413168a807}{get\+Total\+Jewels}} ()
+\begin{DoxyCompactList}\small\item\em O método get\+Total\+Jewels serve para saber a quantidade de jóias coletadas até então.  \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_robot_ac33e2916ae5137cb79e0e6de664e3f1d}{get\+Bag\+Value}} ()
+\begin{DoxyCompactList}\small\item\em O método get\+Bag\+Value serve para saber o valor total das jóias coletadas até então.  \end{DoxyCompactList}\item 
 override string \mbox{\hyperlink{class_robot_a5cc8821a18984f094d8668c6e6b1a9b0}{To\+String}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em O método To\+String é um método herdado da interface \mbox{\hyperlink{interface_i_item}{IItem}}, que diz como o item tem que ser escrito no mapa (que é onde uso o método To\+String para os itens).  \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+A classe \mbox{\hyperlink{class_robot}{Robot}} herda de \mbox{\hyperlink{interface_i_item}{IItem}} e implementa o robô, guardando sua posição, mochila (lista de jóias coletada) e nível de energia.  
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_robot_a6f1a69fcbc220de7b5aef7e599231b49}\label{class_robot_a6f1a69fcbc220de7b5aef7e599231b49}} 
+\index{Robot@{Robot}!collect@{collect}}
+\index{collect@{collect}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{collect()}{collect()}}
+{\footnotesize\ttfamily void Robot.\+collect (\begin{DoxyParamCaption}\item[{Jewel\+Type}]{jewel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+O método collect implementa a coleta da jóia e coloca esta na mochila do robô.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em jewel} & Jóia a ser guardada.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_robot_ac33e2916ae5137cb79e0e6de664e3f1d}\label{class_robot_ac33e2916ae5137cb79e0e6de664e3f1d}} 
+\index{Robot@{Robot}!getBagValue@{getBagValue}}
+\index{getBagValue@{getBagValue}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{getBagValue()}{getBagValue()}}
+{\footnotesize\ttfamily int Robot.\+get\+Bag\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+O método get\+Bag\+Value serve para saber o valor total das jóias coletadas até então.  
+
+\begin{DoxyReturn}{Returns}
+Valor total das jóias coletadas.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_a5a312d597efad6c3a0344aedd30a0edc}\label{class_robot_a5a312d597efad6c3a0344aedd30a0edc}} 
+\index{Robot@{Robot}!getEnergy@{getEnergy}}
+\index{getEnergy@{getEnergy}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{getEnergy()}{getEnergy()}}
+{\footnotesize\ttfamily int Robot.\+get\+Energy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+O método get\+Energy retorna a quantidade de energia atual do robô.  
+
+\begin{DoxyReturn}{Returns}
+Energia atual do robô.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_a2bd75a5b60af6740cd8e18f87082ecba}\label{class_robot_a2bd75a5b60af6740cd8e18f87082ecba}} 
+\index{Robot@{Robot}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily int\mbox{[}$\,$\mbox{]} Robot.\+get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+O método get\+Position retorna a posição atual do robô.  
+
+\begin{DoxyReturn}{Returns}
+Posição atual do robô.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_ad342241f749d83712c1ce6413168a807}\label{class_robot_ad342241f749d83712c1ce6413168a807}} 
+\index{Robot@{Robot}!getTotalJewels@{getTotalJewels}}
+\index{getTotalJewels@{getTotalJewels}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{getTotalJewels()}{getTotalJewels()}}
+{\footnotesize\ttfamily int Robot.\+get\+Total\+Jewels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+O método get\+Total\+Jewels serve para saber a quantidade de jóias coletadas até então.  
+
+\begin{DoxyReturn}{Returns}
+Quantidade de jóias coletadas.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_abb8f883c234cbdf55d428f0d747e8d12}\label{class_robot_abb8f883c234cbdf55d428f0d747e8d12}} 
+\index{Robot@{Robot}!setEnergy@{setEnergy}}
+\index{setEnergy@{setEnergy}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{setEnergy()}{setEnergy()}}
+{\footnotesize\ttfamily void Robot.\+set\+Energy (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+O método set\+Position atualiza a energia atual do robô.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & O parâmetro indica quanto se tem que incrementar ou decrementar da energia atual.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_robot_acbfd7b62358778593ebbecfdca887ade}\label{class_robot_acbfd7b62358778593ebbecfdca887ade}} 
+\index{Robot@{Robot}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Robot@{Robot}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Robot.\+set\+Position (\begin{DoxyParamCaption}\item[{int\mbox{[}$\,$\mbox{]}}]{new\+\_\+position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+O método set\+Position atualiza a posição atual do robô.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+position} & O parâmetro indica a posição para a qual se tem que atualizar.\\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_robot_a5cc8821a18984f094d8668c6e6b1a9b0}\label{class_robot_a5cc8821a18984f094d8668c6e6b1a9b0}} 
 \index{Robot@{Robot}!ToString@{ToString}}
 \index{ToString@{ToString}!Robot@{Robot}}
@@ -46,7 +144,14 @@ override string \mbox{\hyperlink{class_robot_a5cc8821a18984f094d8668c6e6b1a9b0}{
 
 
 
-Implements \mbox{\hyperlink{interface_i_item}{IItem}}.
+O método To\+String é um método herdado da interface \mbox{\hyperlink{interface_i_item}{IItem}}, que diz como o item tem que ser escrito no mapa (que é onde uso o método To\+String para os itens).  
+
+\begin{DoxyReturn}{Returns}
+Como o item robô tem que ser interpretado em string.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_item_ad9bf9eba448ecfa5fb8b9d0ac67c6d85}{IItem}}.
 
 
 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['emptyspace_0',['EmptySpace',['../class_empty_space.html',1,'']]]
+  ['collect_0',['collect',['../class_robot.html#a6f1a69fcbc220de7b5aef7e599231b49',1,'Robot']]]
 ];

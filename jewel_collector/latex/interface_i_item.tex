@@ -1,5 +1,10 @@
 \hypertarget{interface_i_item}{}\doxysection{IItem Interface Reference}
 \label{interface_i_item}\index{IItem@{IItem}}
+
+
+A interface \mbox{\hyperlink{interface_i_item}{IItem}} conecta todos os itens presentes no mapa (jóias, obstáculos, robô e espaços vazios). É feita para que o método de se salvar os itens em cada posição do mapa seja consistente.   
+
+
 Inheritance diagram for IItem\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,15 +14,71 @@ Inheritance diagram for IItem\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{interface_i_item_ad9bf9eba448ecfa5fb8b9d0ac67c6d85}\label{interface_i_item_ad9bf9eba448ecfa5fb8b9d0ac67c6d85}} 
-string {\bfseries To\+String} ()
-\item 
-\mbox{\Hypertarget{interface_i_item_a7e2b922e00d939801a3800187c7adb8f}\label{interface_i_item_a7e2b922e00d939801a3800187c7adb8f}} 
-void {\bfseries use\+Item} (\mbox{\hyperlink{class_robot}{Robot}} robot)
-\item 
+string \mbox{\hyperlink{interface_i_item_ad9bf9eba448ecfa5fb8b9d0ac67c6d85}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em O método To\+String é um método que diz como o item tem que ser escrito no mapa (que é onde uso o método To\+String para os itens).  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_i_item_a7e2b922e00d939801a3800187c7adb8f}{use\+Item}} (\mbox{\hyperlink{class_robot}{Robot}} robot)
+\begin{DoxyCompactList}\small\item\em O método use\+Item vai definir como o item é usado.  \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_i_item_aba88ef31d547baec283576b537708671}{is\+Collectable}} ()
+\begin{DoxyCompactList}\small\item\em O método is\+Collectable indica se o item é coletável ou somente usável.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A interface \mbox{\hyperlink{interface_i_item}{IItem}} conecta todos os itens presentes no mapa (jóias, obstáculos, robô e espaços vazios). É feita para que o método de se salvar os itens em cada posição do mapa seja consistente.  
+
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{interface_i_item_aba88ef31d547baec283576b537708671}\label{interface_i_item_aba88ef31d547baec283576b537708671}} 
-bool {\bfseries is\+Collectable} ()
-\end{DoxyCompactItemize}
+\index{IItem@{IItem}!isCollectable@{isCollectable}}
+\index{isCollectable@{isCollectable}!IItem@{IItem}}
+\doxysubsubsection{\texorpdfstring{isCollectable()}{isCollectable()}}
+{\footnotesize\ttfamily bool IItem.\+is\+Collectable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+O método is\+Collectable indica se o item é coletável ou somente usável.  
+
+\begin{DoxyReturn}{Returns}
+Se o item for usável, retorna verdadeiro, caso contrário retorna falso.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_jewel_ac88460592d49496499ac44043ad56663}{Jewel}}, and \mbox{\hyperlink{class_obstacle_a58fd3e477c6e617b41f0713dc5458d00}{Obstacle}}.
+
+\mbox{\Hypertarget{interface_i_item_ad9bf9eba448ecfa5fb8b9d0ac67c6d85}\label{interface_i_item_ad9bf9eba448ecfa5fb8b9d0ac67c6d85}} 
+\index{IItem@{IItem}!ToString@{ToString}}
+\index{ToString@{ToString}!IItem@{IItem}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily string IItem.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+O método To\+String é um método que diz como o item tem que ser escrito no mapa (que é onde uso o método To\+String para os itens).  
+
+\begin{DoxyReturn}{Returns}
+Por padrão retorna como um campo vazio, isso porque o método é sobrescrito pelas classes que extendem \mbox{\hyperlink{interface_i_item}{IItem}}.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_empty_space_ada48200068f83677370443a598755c81}{Empty\+Space}}, \mbox{\hyperlink{class_jewel_a059005d8c38fa9739dc761b05294335a}{Jewel}}, \mbox{\hyperlink{class_obstacle_a4d711674e6d21779907acd4c170542e3}{Obstacle}}, and \mbox{\hyperlink{class_robot_a5cc8821a18984f094d8668c6e6b1a9b0}{Robot}}.
+
+\mbox{\Hypertarget{interface_i_item_a7e2b922e00d939801a3800187c7adb8f}\label{interface_i_item_a7e2b922e00d939801a3800187c7adb8f}} 
+\index{IItem@{IItem}!useItem@{useItem}}
+\index{useItem@{useItem}!IItem@{IItem}}
+\doxysubsubsection{\texorpdfstring{useItem()}{useItem()}}
+{\footnotesize\ttfamily void IItem.\+use\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot}{Robot}}}]{robot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+O método use\+Item vai definir como o item é usado.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em robot} & Como é o robô que vai interagir com os itens, geralmente esses impactam o robô, alterando alguma de suas propriedas. Portanto é necessário se ter acesso a instância de robô em questão.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_jewel_a7cacefb52cc58c8d6967c6595c90fcf2}{Jewel}}, and \mbox{\hyperlink{class_obstacle_ae16e8cc63247f76bed72197b2e87217a}{Obstacle}}.
+
 
 
 The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}

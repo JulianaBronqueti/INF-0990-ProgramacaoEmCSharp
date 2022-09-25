@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['useitem_0',['useItem',['../class_map.html#a7198724a171c81cc4df5f2202b1d75c9',1,'Map']]]
+  ['main_0',['Main',['../class_jewel_collector.html#aa8e5acb949e7b37d9c33f2a27d93eb8d',1,'JewelCollector']]],
+  ['moverobot_1',['moveRobot',['../class_map.html#a73e06e2cbdf172230060e696f0a1d826',1,'Map']]]
 ];
