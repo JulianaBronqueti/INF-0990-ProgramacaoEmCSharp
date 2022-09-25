@@ -1,5 +1,4 @@
-﻿using Namespaces;
-/// <summary>
+﻿/// <summary>
 /// JewelCollector: classe de início do programa, a qual receberá os parametros do usuário para criação do tabuleiro e instanciará os principais elementos do jogo (mapa e robô).
 /// </summary>
 public class JewelCollector {
@@ -7,6 +6,10 @@ public class JewelCollector {
     static bool running = true;
     static Map? map;
 
+    /// <summary>
+    /// O método EnterCommands será chamado assim que houver um disparo de evento que indica que por algum motivo o jogo acabou, seja porque o jogador ganhou, seja porque sua energia acabou.
+    /// </summary>
+    /// <param name="reason">O parâmetro reason indica justamente o motivo pelo qual o jogo acabou.</param>
     static void EnterCommands(string reason){
         if(reason == "win"){
             Console.WriteLine("You win! Congratulations!");
@@ -20,6 +23,9 @@ public class JewelCollector {
         }
     }
 
+    /// <summary>
+    /// O método randomMap gera um mapa aleatório assim que a fase inicial é concluída. Neste o mapa aumenta suas dimensões em 1 unidade, até o limite máximo de (30, 30) unidades e a quantidade de jóias aumenta proporcionalmente.
+    /// </summary>
     static void randomMap(){
         Random rnd = new Random();
         // A cada nova fase, o mapa aumenta suas dimensões em 1 unidade, até o limite máximo de (30, 30) unidades
@@ -31,7 +37,6 @@ public class JewelCollector {
             map = new Map(30);
         }
         
-
         // Quantidade de jóias: mínimo 20% e máximo 70% da dimensão do board
         int max_jewels = 7*dimension/10;
         int min_jewels = 2*dimension/10;
@@ -98,6 +103,9 @@ public class JewelCollector {
         map.GameOver += EnterCommands;
     }
 
+    /// <summary>
+    /// O método newMap o mapa inicial a partir das entradas do usuário. No arquivo READ.ME tem um exemplo das entradas a serem colocadas para gerar esse mapa, conforme especificado no roteiro do projeto.
+    /// </summary>
     static void newMap(){
         Console.WriteLine("Enter the board dimension: ");
         int dimension = Convert.ToInt32(Console.ReadLine());
@@ -172,6 +180,9 @@ public class JewelCollector {
         Console.WriteLine("Let's start!!");
     }
 
+    /// <summary>
+    /// O método Main inicializará o programa. Deixei a cargo da Main chamar a função newMap() para gerar o mapa inicial, assim como subscrever o EnterCommands no evento GameOver da classe Map. Além disso, este método é responsável por fazer a coleta das entradas do usuário para interação do robô com o mapa.
+    /// </summary>
     public static void Main() {
         newMap();
         map!.GameOver += EnterCommands;

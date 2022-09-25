@@ -1,0 +1,65 @@
+\hypertarget{class_map}{}\doxysection{Map Class Reference}
+\label{class_map}\index{Map@{Map}}
+
+
+A classe \mbox{\hyperlink{class_map}{Map}} implementa o mapa, com a criação deste e a inserção das jóias e dos obstáculos. Além disso, é responsável por gerenciar a movimentação do robô (verificar se é válida ou não) e verificar se este pode utilizar algum item que está a seu alcance. Como principal funcionalidade é responsável também por imprimir o estado atual do mapa.   
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_map_a47f61252d2271d9fd4ba13ad9690a38b}\label{class_map_a47f61252d2271d9fd4ba13ad9690a38b}} 
+{\bfseries Map} (int size\+\_\+input)
+\item 
+\mbox{\Hypertarget{class_map_acdf5522e99afcdaa85c0496067a12eb2}\label{class_map_acdf5522e99afcdaa85c0496067a12eb2}} 
+void {\bfseries insert\+Jewel} (string jewel\+\_\+input, int\mbox{[}$\,$\mbox{]} position)
+\begin{DoxyCompactList}\small\item\em O método insert\+Jewel é responsável por inserir a jóia na posição, ambas dadas nos argumentos, no mapa.  \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_map_af1833e372235153c2cdf79e75195a5da}\label{class_map_af1833e372235153c2cdf79e75195a5da}} 
+void {\bfseries insert\+Obstacles} (string obstacle\+\_\+input, int\mbox{[}$\,$\mbox{]} position)
+\begin{DoxyCompactList}\small\item\em O método insert\+Obstacles é responsável por inserir o obstáculo na posição, ambas dadas nos argumentos, no mapa.  \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_map_ad9e9e25db6d5aef3b4bc2576dd3f8578}\label{class_map_ad9e9e25db6d5aef3b4bc2576dd3f8578}} 
+void {\bfseries insert\+Robot} (int\mbox{[}$\,$\mbox{]} position)
+\item 
+\mbox{\Hypertarget{class_map_ae07ceb310911e4d9ea33d70621d5af47}\label{class_map_ae07ceb310911e4d9ea33d70621d5af47}} 
+int {\bfseries get\+Size} ()
+\item 
+void \mbox{\hyperlink{class_map_a73e06e2cbdf172230060e696f0a1d826}{move\+Robot}} (string command)
+\begin{DoxyCompactList}\small\item\em O método move\+Robot é responsável por, a partir do comando dado como argumento, verificar se o robô ainda pode se movimentar (energia \texorpdfstring{$>$}{>} 0) e se a nova posição é válida. Nesse método é utilizado tratamento de exceções justamente para lidar com o robô tentando passar dos limites do mapa ou ir para uma posição já ocupada. Como esse método verifica o nível de energia do robô, se este for menor ou igual a 0, ele é responsável por disparar o evento de Game\+Over.  \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_map_a7198724a171c81cc4df5f2202b1d75c9}\label{class_map_a7198724a171c81cc4df5f2202b1d75c9}} 
+void {\bfseries use\+Item} ()
+\begin{DoxyCompactList}\small\item\em O método use\+Item é responsável por, a partir da posição do robô, verificar se há alguma posição adjacente a ele que exista um item usável, como as jóias que são coletadas e a jóia azul e o obstáculo árvore que podem ser usados para recuperar energia. É possível trabalhar dessa forma, pois estou usando iterface \mbox{\hyperlink{interface_i_item}{IItem}} para trabalhar com as jóias e os obstáculos conjuntamente. Como esse método coleta as jóias, removendo-\/as do mapa, consegue verificar se já foram todas coletadas, e em caso positivo pode disparar o evento de Game\+Over como ganho pelo jogador, podendo ir para a próxima fase.  \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_map_a53bcf3c9e53e6422387a1420e065da7b}\label{class_map_a53bcf3c9e53e6422387a1420e065da7b}} 
+void {\bfseries print\+Map} ()
+\begin{DoxyCompactList}\small\item\em O método print\+Map é responsável por imprimir o mapa, se baseando em que tipo de item tem em cada posição da matriz. Além disso, imprime a quantidade de energia do robô, quantidade de itens na mochila do robô e o valor total das jóias coletadas.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_map_a944b4322d0a35c9578d26983885b664b}\label{class_map_a944b4322d0a35c9578d26983885b664b}} 
+Game\+Over\+Handler? {\bfseries Game\+Over}
+\begin{DoxyCompactList}\small\item\em Game\+Over é a variável de evento que será acionada quando houver perda ou ganho do jogo.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A classe \mbox{\hyperlink{class_map}{Map}} implementa o mapa, com a criação deste e a inserção das jóias e dos obstáculos. Além disso, é responsável por gerenciar a movimentação do robô (verificar se é válida ou não) e verificar se este pode utilizar algum item que está a seu alcance. Como principal funcionalidade é responsável também por imprimir o estado atual do mapa.  
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_map_a73e06e2cbdf172230060e696f0a1d826}\label{class_map_a73e06e2cbdf172230060e696f0a1d826}} 
+\index{Map@{Map}!moveRobot@{moveRobot}}
+\index{moveRobot@{moveRobot}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{moveRobot()}{moveRobot()}}
+{\footnotesize\ttfamily void Map.\+move\+Robot (\begin{DoxyParamCaption}\item[{string}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+O método move\+Robot é responsável por, a partir do comando dado como argumento, verificar se o robô ainda pode se movimentar (energia \texorpdfstring{$>$}{>} 0) e se a nova posição é válida. Nesse método é utilizado tratamento de exceções justamente para lidar com o robô tentando passar dos limites do mapa ou ir para uma posição já ocupada. Como esse método verifica o nível de energia do robô, se este for menor ou igual a 0, ele é responsável por disparar o evento de Game\+Over.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & \\
+\hline
+\end{DoxyParams}
+Como pedido no enunciado foi usado o tratamento por exceções para quando o robô tenta se deslocar para uma posição fora dos limites do mapa e quando o robô tenta se deslocar para uma posição ocupada por outro item. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Map.\+cs\end{DoxyCompactItemize}

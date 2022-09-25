@@ -1,12 +1,15 @@
 public delegate void GameOverHandler(string reason);
 
+/// <summary>
+/// A classe Map implementa o mapa, com a criação deste e a inserção das jóias e dos obstáculos. Além disso, é responsável por gerenciar a movimentação do robô (verificar se é válida ou não) e verificar se este pode utilizar algum item que está a seu alcance. Como principal funcionalidade é responsável também por imprimir o estado atual do mapa.
+/// </summary>
 public class Map{
     int size;
     IItem[,] map;
     /// <summary>
     /// Como pedido no enunciado, estou usando uma coleção para salvar as jóias presentes no mapa. Quando essa lista estiver vazia, o usuário irá para a próxima fase do jogo.
     /// </summary>
-    /// <typeparam name="Jewel">O tipo de cada item da lista será Jewel, que contém as informações da jóia em questão, como posição e tipo.</typeparam>
+    /// <typeparam name="JewelType">O tipo de cada item da lista será JewelType, que contém o tipo da jóia em questão.</typeparam>
     List<JewelType> jewels = new List<JewelType>();
     Robot? robot;
 
@@ -20,6 +23,9 @@ public class Map{
         }
     } 
 
+    /// <summary>
+    /// O método insertJewel é responsável por inserir a jóia na posição, ambas dadas nos argumentos, no mapa. 
+    /// </summary>
     public void insertJewel(string jewel_input, int[] position){
         if(map[position[0], position[1]].ToString() == "--"){
             switch(jewel_input){
@@ -45,6 +51,9 @@ public class Map{
         }
     }
 
+    /// <summary>
+    /// O método insertObstacles é responsável por inserir o obstáculo na posição, ambas dadas nos argumentos, no mapa.
+    /// </summary>
     public void insertObstacles(string obstacle_input, int[] position){
         if(map[position[0], position[1]].ToString() == "--"){
             switch(obstacle_input){
@@ -76,6 +85,9 @@ public class Map{
         return size;
     }
 
+    /// <summary>
+    /// O método checkPosition é responsável por conferir a posição para onde o robô vai, e verificar se está próximo de um elemento radioativo (perdendo 10 de energia), assim como se vai para a própria posição do elemento radioativo (perdendo 30 de energia) ou se está tentando ir para uma posição onde já há uma jóia ou obstáculo (lançando uma exceção que será tratada no método moveRobot da classe Map).
+    /// </summary>
     void checkPosition(int x, int y){
         for(int i = -1; i < 2; i++){
             for(int j = -1; j < 2; j++){
@@ -96,6 +108,9 @@ public class Map{
         }
     }
 
+    /// <summary>
+    /// O método moveRobot é responsável por, a partir do comando dado como argumento, verificar se o robô ainda pode se movimentar (energia > 0) e se a nova posição é válida. Nesse método é utilizado tratamento de exceções justamente para lidar com o robô tentando passar dos limites do mapa ou ir para uma posição já ocupada. Como esse método verifica o nível de energia do robô, se este for menor ou igual a 0, ele é responsável por disparar o evento de GameOver.
+    /// </summary>
     public void moveRobot(string command){
         if(robot!.getEnergy() >= 1){
             int[] new_position = new int[2];
@@ -118,7 +133,6 @@ public class Map{
             /// <summary>
             /// Como pedido no enunciado foi usado o tratamento por exceções para quando o robô tenta se deslocar para uma posição fora dos limites do mapa e quando o robô tenta se deslocar para uma posição ocupada por outro item.
             /// </summary>
-            /// <value></value>
             try{
                 checkPosition(new_position[0], new_position[1]);
                 map[robot_position[0], robot_position[1]] = map[new_position[0], new_position[1]];
@@ -138,8 +152,14 @@ public class Map{
         }
     }
 
+    /// <summary>
+    /// GameOver é a variável de evento que será acionada quando houver perda ou ganho do jogo.
+    /// </summary>
     public event GameOverHandler? GameOver;
 
+    /// <summary>
+    /// O método useItem é responsável por, a partir da posição do robô, verificar se há alguma posição adjacente a ele que exista um item usável, como as jóias que são coletadas e a jóia azul e o obstáculo árvore que podem ser usados para recuperar energia. É possível trabalhar dessa forma, pois estou usando iterface IItem para trabalhar com as jóias e os obstáculos conjuntamente. Como esse método coleta as jóias, removendo-as do mapa, consegue verificar se já foram todas coletadas, e em caso positivo pode disparar o evento de GameOver como ganho pelo jogador, podendo ir para a próxima fase.
+    /// </summary>
     public void useItem(){
         int[] robot_position = robot!.getPosition();
         for(int i = -1; i < 2; i++){
@@ -163,6 +183,9 @@ public class Map{
         }
     }
 
+    /// <summary>
+    /// O método printMap é responsável por imprimir o mapa, se baseando em que tipo de item tem em cada posição da matriz. Além disso, imprime a quantidade de energia do robô, quantidade de itens na mochila do robô e o valor total das jóias coletadas.
+    /// </summary>
     public void printMap(){
         for(int i=0; i<size; i++){
             for(int j=0; j<size; j++){
