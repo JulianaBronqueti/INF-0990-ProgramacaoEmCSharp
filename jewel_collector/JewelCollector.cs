@@ -5,11 +5,13 @@
 public class JewelCollector {
 
     static bool running = true;
+    static Map? map;
 
     static void EnterCommands(string reason){
         if(reason == "win"){
             Console.WriteLine("You win! Congratulations!");
-            Console.WriteLine("New Game: ");
+            Console.WriteLine("New Game: ");            
+            randomMap(); 
             running = true;
         }
         else if(reason == "energy"){
@@ -18,12 +20,89 @@ public class JewelCollector {
         }
     }
 
-    public static void Main() {
+    static void randomMap(){
+        Random rnd = new Random();
+        // A cada nova fase, o mapa aumenta suas dimensões em 1 unidade, até o limite máximo de (30, 30) unidades
+        int dimension = map.getSize()+1;
+        if(dimension <= 30){
+            map = new Map(dimension);
+        }
+        else{
+            map = new Map(30);
+        }
+        
 
+        // Quantidade de jóias: mínimo 20% e máximo 70% da dimensão do board
+        int max_jewels = 7*dimension/10;
+        int min_jewels = 2*dimension/10;
+        int n_jewels = rnd.Next(min_jewels, max_jewels);
+
+        for(int i=0; i<n_jewels; i++){
+            int x_position_jewel = rnd.Next(0, dimension-1);
+            int y_position_jewel = rnd.Next(1, dimension-1);
+            int[] position_jewel = new int[2] {x_position_jewel, y_position_jewel};
+
+            int jewel_type_number = rnd.Next(0,3);
+            string jewel_type;
+            switch(jewel_type_number){
+                case 0:
+                    jewel_type = "Red";
+                    break;
+                case 1:
+                    jewel_type = "Green";
+                    break;
+                case 2:
+                    jewel_type = "Blue";
+                    break;
+                default:
+                    jewel_type = "Red";
+                    break;
+            }
+            map.insertJewel(jewel_type, position_jewel);
+        }
+
+        // Quantidade de obstáculos: mínimo 1, máximo metade da dimensão do board
+        int max_obstacles = dimension/2;
+        int n_obstacles = rnd.Next(1, max_jewels);
+
+        for(int i=0; i<n_obstacles; i++){
+            // As posições dos obstáculos são no mínimo 2,2 para que o robô possa se movimentar
+            int x_position_obstacle = rnd.Next(2, dimension-1);
+            int y_position_obstacle = rnd.Next(2, dimension-1);
+            int[] position_obstacle = new int[2] {x_position_obstacle, y_position_obstacle};
+
+            int obstacle_type_number = rnd.Next(0,3);
+            string obstacle_type;
+            switch(obstacle_type_number){
+                case 0:
+                    obstacle_type = "Water";
+                    break;
+                case 1:
+                    obstacle_type = "Tree";
+                    break;
+                case 2:
+                    obstacle_type = "Radioactive";
+                    break;
+                default:
+                    obstacle_type = "Water";
+                    break;
+            }
+            map.insertObstacles(obstacle_type, position_obstacle);
+        }
+
+        // Robô sempre iniciará na posição 0,0
+        int[] position = new int[2] {0, 0};
+        map.insertRobot(position);
+
+        Console.WriteLine("Let's start!!");
+        map.GameOver += EnterCommands;
+    }
+
+    static void newMap(){
         Console.WriteLine("Enter the board dimension: ");
         int dimension = Convert.ToInt32(Console.ReadLine());
 
-        Map map = new Map(dimension);
+        map = new Map(dimension);
 
         Console.WriteLine("Insert the number of jewels: ");
         int n_jewels = Convert.ToInt32(Console.ReadLine());
@@ -91,7 +170,10 @@ public class JewelCollector {
         }
 
         Console.WriteLine("Let's start!!");
+    }
 
+    public static void Main() {
+        newMap();
         map.GameOver += EnterCommands;
 
         do {

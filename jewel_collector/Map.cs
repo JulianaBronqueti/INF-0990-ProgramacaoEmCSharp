@@ -21,51 +21,55 @@ public class Map{
     } 
 
     public void insertJewel(string jewel_input, int[] position){
-        switch(jewel_input){
-            case "Red":
-                // jewels.Add(new Jewel(position, JewelType.Red));
-                jewels.Add(JewelType.Red);
-                map[position[0], position[1]] = new Jewel(position, JewelType.Red);
-                Console.WriteLine("Red added");
-                break;
-            case "Green":
-                // jewels.Add(new Jewel(position, JewelType.Green));
-                jewels.Add(JewelType.Green);
-                map[position[0], position[1]] = new Jewel(position, JewelType.Green);
-                Console.WriteLine("Green added"); 
-                break;
-            case "Blue":
-                // jewels.Add(new Jewel(position, JewelType.Blue));
-                jewels.Add(JewelType.Blue);
-                map[position[0], position[1]] = new Jewel(position, JewelType.Blue);
-                Console.WriteLine("Blue added");
-                break;
-            default:
-                Console.WriteLine("Invalid Jewel");
-                break;
+        if(map[position[0], position[1]].ToString() == "--"){
+            switch(jewel_input){
+                case "Red":
+                    // jewels.Add(new Jewel(position, JewelType.Red));
+                    jewels.Add(JewelType.Red);
+                    map[position[0], position[1]] = new Jewel(position, JewelType.Red);
+                    Console.WriteLine("Red added");
+                    break;
+                case "Green":
+                    // jewels.Add(new Jewel(position, JewelType.Green));
+                    jewels.Add(JewelType.Green);
+                    map[position[0], position[1]] = new Jewel(position, JewelType.Green);
+                    Console.WriteLine("Green added"); 
+                    break;
+                case "Blue":
+                    // jewels.Add(new Jewel(position, JewelType.Blue));
+                    jewels.Add(JewelType.Blue);
+                    map[position[0], position[1]] = new Jewel(position, JewelType.Blue);
+                    Console.WriteLine("Blue added");
+                    break;
+                default:
+                    Console.WriteLine("Invalid Jewel");
+                    break;
+            }
         }
     }
 
     public void insertObstacles(string obstacle_input, int[] position){
-        switch(obstacle_input){
-            case "Water":
-                // obstacles.Add(new Obstacle(position, ObstacleType.Water));
-                map[position[0], position[1]] = new Obstacle(position, ObstacleType.Water);
-                Console.WriteLine("Water added");
-                break;
-            case "Tree":
-                // obstacles.Add(new Obstacle(position, ObstacleType.Tree));
-                map[position[0], position[1]] = new Obstacle(position, ObstacleType.Tree);
-                Console.WriteLine("Tree added");
-                break;
-            case "Radioactive":
-                // obstacles.Add(new Obstacle(position, ObstacleType.Tree));
-                map[position[0], position[1]] = new Obstacle(position, ObstacleType.Radioactive);
-                Console.WriteLine("Radioactive added");
-                break;
-            default:
-                Console.WriteLine("Invalid Obstacle");
-                break;
+        if(map[position[0], position[1]].ToString() == "--"){
+            switch(obstacle_input){
+                case "Water":
+                    // obstacles.Add(new Obstacle(position, ObstacleType.Water));
+                    map[position[0], position[1]] = new Obstacle(position, ObstacleType.Water);
+                    Console.WriteLine("Water added");
+                    break;
+                case "Tree":
+                    // obstacles.Add(new Obstacle(position, ObstacleType.Tree));
+                    map[position[0], position[1]] = new Obstacle(position, ObstacleType.Tree);
+                    Console.WriteLine("Tree added");
+                    break;
+                case "Radioactive":
+                    // obstacles.Add(new Obstacle(position, ObstacleType.Tree));
+                    map[position[0], position[1]] = new Obstacle(position, ObstacleType.Radioactive);
+                    Console.WriteLine("Radioactive added");
+                    break;
+                default:
+                    Console.WriteLine("Invalid Obstacle");
+                    break;
+            }
         }
     }
 
@@ -78,8 +82,22 @@ public class Map{
         return size;
     }
 
-    void checkEmptyPosition(int x, int y){
-        if(map[x,y].GetType().ToString() != "EmptySpace"){
+    void checkPosition(int x, int y){
+        for(int i = -1; i < 2; i++){
+            for(int j = -1; j < 2; j++){
+                if(x+i < 0 || x+i >= size || y+j < 0 || y+j >= size){
+                    continue;
+                }
+                else if(map[x+i, y+j].ToString() == "!!"){
+                    robot!.setEnergy(-10);
+                }
+            }
+        }
+        if(map[x,y].ToString() == "!!"){
+            robot!.setEnergy(-30);
+            map[x,y] = new EmptySpace();
+        }
+        else if(map[x,y].GetType().ToString() != "EmptySpace"){
             throw new InvalidDataException();
         }
     }
@@ -108,7 +126,7 @@ public class Map{
             /// </summary>
             /// <value></value>
             try{
-                checkEmptyPosition(new_position[0], new_position[1]);
+                checkPosition(new_position[0], new_position[1]);
                 map[robot_position[0], robot_position[1]] = map[new_position[0], new_position[1]];
                 map[new_position[0], new_position[1]] = robot;
                 robot.setPosition(new_position);
