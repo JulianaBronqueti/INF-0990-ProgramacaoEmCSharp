@@ -1,4 +1,7 @@
 ﻿using Namespaces;
+/// <summary>
+/// JewelCollector: classe de início do programa, a qual receberá os parametros do usuário para criação do tabuleiro e instanciará os principais elementos do jogo (mapa e robô).
+/// </summary>
 public class JewelCollector {
 
     public static void Main() {
@@ -87,7 +90,7 @@ public class JewelCollector {
             } else if (command.Equals("w") || command.Equals("a") || command.Equals("s") || command.Equals("d")) {
                 map.moveRobot(command);
             } else if (command.Equals("g")){
-                map.collectJewel();
+                map.useItem();
             }
         } while (running);
     }

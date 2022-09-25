@@ -1,6 +1,7 @@
-public class Robot{
+public class Robot: IItem{
     int[] position;
     List<JewelType> bag = new List<JewelType>();
+    int energy = 5;
 
     public Robot(int[] position_input){
         position = position_input;
@@ -12,6 +13,14 @@ public class Robot{
 
     public void setPosition(int [] new_position){
         position = new_position;
+    }
+
+    public void setEnergy(int value){
+        energy += value;
+    }
+
+    public int getEnergy(){
+        return energy;
     }
 
     public void collect(JewelType jewel){
@@ -28,5 +37,9 @@ public class Robot{
             total += (int)jewel;
         }
         return total;
+    }
+
+    public override string ToString(){
+        return "ME";
     }
 }

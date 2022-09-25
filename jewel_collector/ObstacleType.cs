@@ -1,4 +1,5 @@
 public enum ObstacleType{
     Water,
-    Tree
+    Tree,
+    Radioactive,
 }
