@@ -1,0 +1,60 @@
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\bin\Debug\net6.0\jewel_collector.exe
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\bin\Debug\net6.0\jewel_collector.deps.json
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\bin\Debug\net6.0\jewel_collector.runtimeconfig.json
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\bin\Debug\net6.0\jewel_collector.dll
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\bin\Debug\net6.0\jewel_collector.pdb
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.csproj.AssemblyReference.cache
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.AssemblyInfoInputs.cache
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.AssemblyInfo.cs
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.csproj.CoreCompileInputs.cache
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.dll
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\obj\Debug\net6.0\refint\jewel_collector.dll
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.pdb
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.genruntimeconfig.cache
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\Lab2\jewel_collector\jewel_collector\obj\Debug\net6.0\ref\jewel_collector.dll
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\bin\Debug\net6.0\jewel_collector.exe
+c:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\bin\Debug\net6.0\jewel_collector.deps.json
+c:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\bin\Debug\net6.0\jewel_collector.runtimeconfig.json
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\bin\Debug\net6.0\jewel_collector.dll
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\bin\Debug\net6.0\jewel_collector.pdb
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.csproj.AssemblyReference.cache
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.AssemblyInfoInputs.cache
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.AssemblyInfo.cs
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.csproj.CoreCompileInputs.cache
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.dll
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\obj\Debug\net6.0\refint\jewel_collector.dll
+C:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.pdb
+c:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.genruntimeconfig.cache
+c:\Users\msft39\Desktop\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\obj\Debug\net6.0\ref\jewel_collector.dll
+E:\Juliana\Documents\UNICAMP\8º Semestre\Curso Extensão Tecnologias Microsoft\INF-0990 - Programação em C#\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\bin\Debug\net6.0\jewel_collector.exe
+e:\Juliana\Documents\UNICAMP\8º Semestre\Curso Extensão Tecnologias Microsoft\INF-0990 - Programação em C#\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\bin\Debug\net6.0\jewel_collector.deps.json
+e:\Juliana\Documents\UNICAMP\8º Semestre\Curso Extensão Tecnologias Microsoft\INF-0990 - Programação em C#\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\bin\Debug\net6.0\jewel_collector.runtimeconfig.json
+E:\Juliana\Documents\UNICAMP\8º Semestre\Curso Extensão Tecnologias Microsoft\INF-0990 - Programação em C#\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\bin\Debug\net6.0\jewel_collector.dll
+E:\Juliana\Documents\UNICAMP\8º Semestre\Curso Extensão Tecnologias Microsoft\INF-0990 - Programação em C#\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\bin\Debug\net6.0\jewel_collector.pdb
+E:\Juliana\Documents\UNICAMP\8º Semestre\Curso Extensão Tecnologias Microsoft\INF-0990 - Programação em C#\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.csproj.AssemblyReference.cache
+E:\Juliana\Documents\UNICAMP\8º Semestre\Curso Extensão Tecnologias Microsoft\INF-0990 - Programação em C#\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.GeneratedMSBuildEditorConfig.editorconfig
+E:\Juliana\Documents\UNICAMP\8º Semestre\Curso Extensão Tecnologias Microsoft\INF-0990 - Programação em C#\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.AssemblyInfoInputs.cache
+E:\Juliana\Documents\UNICAMP\8º Semestre\Curso Extensão Tecnologias Microsoft\INF-0990 - Programação em C#\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.AssemblyInfo.cs
+E:\Juliana\Documents\UNICAMP\8º Semestre\Curso Extensão Tecnologias Microsoft\INF-0990 - Programação em C#\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.csproj.CoreCompileInputs.cache
+E:\Juliana\Documents\UNICAMP\8º Semestre\Curso Extensão Tecnologias Microsoft\INF-0990 - Programação em C#\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.dll
+E:\Juliana\Documents\UNICAMP\8º Semestre\Curso Extensão Tecnologias Microsoft\INF-0990 - Programação em C#\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\obj\Debug\net6.0\refint\jewel_collector.dll
+E:\Juliana\Documents\UNICAMP\8º Semestre\Curso Extensão Tecnologias Microsoft\INF-0990 - Programação em C#\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.pdb
+e:\Juliana\Documents\UNICAMP\8º Semestre\Curso Extensão Tecnologias Microsoft\INF-0990 - Programação em C#\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\obj\Debug\net6.0\jewel_collector.genruntimeconfig.cache
+e:\Juliana\Documents\UNICAMP\8º Semestre\Curso Extensão Tecnologias Microsoft\INF-0990 - Programação em C#\INF-0990-ProgramacaoEmCSharp\jewel_collector\jewel_collector\obj\Debug\net6.0\ref\jewel_collector.dll
+C:\Users\juliana.bronqueti_if\Desktop\UNICAMP\Curso Microsoft\INF-0990-ProgramacaoEmCSharp\jewel_collector\bin\Debug\net6.0\jewel_collector.exe
+c:\Users\juliana.bronqueti_if\Desktop\UNICAMP\Curso Microsoft\INF-0990-ProgramacaoEmCSharp\jewel_collector\bin\Debug\net6.0\jewel_collector.deps.json
+c:\Users\juliana.bronqueti_if\Desktop\UNICAMP\Curso Microsoft\INF-0990-ProgramacaoEmCSharp\jewel_collector\bin\Debug\net6.0\jewel_collector.runtimeconfig.json
+C:\Users\juliana.bronqueti_if\Desktop\UNICAMP\Curso Microsoft\INF-0990-ProgramacaoEmCSharp\jewel_collector\bin\Debug\net6.0\jewel_collector.dll
+C:\Users\juliana.bronqueti_if\Desktop\UNICAMP\Curso Microsoft\INF-0990-ProgramacaoEmCSharp\jewel_collector\bin\Debug\net6.0\jewel_collector.pdb
+C:\Users\juliana.bronqueti_if\Desktop\UNICAMP\Curso Microsoft\INF-0990-ProgramacaoEmCSharp\jewel_collector\obj\Debug\net6.0\jewel_collector.csproj.AssemblyReference.cache
+C:\Users\juliana.bronqueti_if\Desktop\UNICAMP\Curso Microsoft\INF-0990-ProgramacaoEmCSharp\jewel_collector\obj\Debug\net6.0\jewel_collector.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\juliana.bronqueti_if\Desktop\UNICAMP\Curso Microsoft\INF-0990-ProgramacaoEmCSharp\jewel_collector\obj\Debug\net6.0\jewel_collector.AssemblyInfoInputs.cache
+C:\Users\juliana.bronqueti_if\Desktop\UNICAMP\Curso Microsoft\INF-0990-ProgramacaoEmCSharp\jewel_collector\obj\Debug\net6.0\jewel_collector.AssemblyInfo.cs
+C:\Users\juliana.bronqueti_if\Desktop\UNICAMP\Curso Microsoft\INF-0990-ProgramacaoEmCSharp\jewel_collector\obj\Debug\net6.0\jewel_collector.csproj.CoreCompileInputs.cache
+C:\Users\juliana.bronqueti_if\Desktop\UNICAMP\Curso Microsoft\INF-0990-ProgramacaoEmCSharp\jewel_collector\obj\Debug\net6.0\jewel_collector.dll
+C:\Users\juliana.bronqueti_if\Desktop\UNICAMP\Curso Microsoft\INF-0990-ProgramacaoEmCSharp\jewel_collector\obj\Debug\net6.0\refint\jewel_collector.dll
+C:\Users\juliana.bronqueti_if\Desktop\UNICAMP\Curso Microsoft\INF-0990-ProgramacaoEmCSharp\jewel_collector\obj\Debug\net6.0\jewel_collector.pdb
+c:\Users\juliana.bronqueti_if\Desktop\UNICAMP\Curso Microsoft\INF-0990-ProgramacaoEmCSharp\jewel_collector\obj\Debug\net6.0\jewel_collector.genruntimeconfig.cache
+c:\Users\juliana.bronqueti_if\Desktop\UNICAMP\Curso Microsoft\INF-0990-ProgramacaoEmCSharp\jewel_collector\obj\Debug\net6.0\ref\jewel_collector.dll
